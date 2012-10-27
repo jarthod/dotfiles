@@ -71,7 +71,12 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # default text editor
-export EDITOR='subl -w'
+if command -v subl >/dev/null 2>&1
+then
+  export EDITOR='subl -w'
+else
+  export EDITOR='emacs -nw'
+fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
