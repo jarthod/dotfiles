@@ -1,6 +1,8 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+cd $HOME
+
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 
@@ -34,6 +36,15 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+# git prompt
+__git_ps1 ()
+{
+    local b="$(git symbolic-ref HEAD 2>/dev/null)";
+    if [ -n "$b" ]; then
+        printf " (%s)" "${b##refs/heads/}";
+    fi
+}
 
 # colored prompt
 export PS1="\[\e[0;32m\]\u@\h \[\e[0;36m\][\W]\[\e[0;35m\]\$(__git_ps1) \[\e[01;33m\]>\[\e[m\] "
