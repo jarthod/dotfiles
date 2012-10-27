@@ -47,7 +47,7 @@ __git_ps1 ()
 }
 
 # colored prompt
-export PS1="\[\e[0;32m\]\u@\h \[\e[0;36m\][\W]\[\e[0;35m\]\$(__git_ps1) \[\e[01;33m\]>\[\e[m\] "
+export PS1="\[\e[01;32m\]\u@\h \[\e[01;36m\][\W]\[\e[01;35m\]\$(__git_ps1) \[\e[01;33m\]>\[\e[m\] "
 
 # aliases
 alias ls='ls --color=auto'
