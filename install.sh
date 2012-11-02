@@ -17,7 +17,7 @@ cd $dir
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 echo "Linking dotfiles"
 for file in $files; do
-  mv ~/.$file $backup
+  mv -f ~/.$file $backup
   ln -s $dir/$file ~/.$file
 done
 

@@ -71,6 +71,7 @@ alias preprod="ssh-add; ssh dimelo@preprod.dimelo.typhon.net"
 alias lambda="ssh bigbourin@lambda.rootbox.fr"
 alias vks="ssh root@vks.rootbox.fr"
 alias vps6="ssh deploy@vps6.rootbox.fr"
+alias vps5="ssh deploy@vps5.rootbox.fr"
 alias pi="ssh pi@pi.rootbox.fr"
 
 # rbenv shell integration
