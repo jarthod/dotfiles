@@ -1,7 +1,8 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-cd $HOME
+# Redirect to home if not allowed in this folder
+if [ ! -w $PWD ]; then cd $HOME; fi
 
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth

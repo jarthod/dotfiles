@@ -15,7 +15,15 @@ mkdir -p $backup
 cd $dir
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
+echo "Linking dotfiles"
 for file in $files; do
   mv ~/.$file $backup
   ln -s $dir/$file ~/.$file
 done
+
+# copy authorized_keys
+if [ ! -e ~/.ssh/authorized_keys ]
+then
+  echo "Copying authorized_keys"
+  ln -s $dir/authorized_keys ~/.ssh/authorized_keys
+fi
