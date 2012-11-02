@@ -6,7 +6,7 @@
 # folders
 dir=~/dotfiles
 backup=~/dotfiles_old
-files="bashrc gitconfig"
+files="bashrc gitconfig gemrc"
 
 # create dotfiles_old in homedir
 mkdir -p $backup
