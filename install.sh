@@ -27,3 +27,11 @@ then
   echo "Copying authorized_keys"
   ln -s $dir/authorized_keys ~/.ssh/authorized_keys
 fi
+
+# install rbenv
+if [ ! -e ~/.rbenv ]
+then
+  echo "Installing rbenv"
+  git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+  git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+fi
