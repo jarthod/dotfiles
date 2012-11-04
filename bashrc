@@ -74,6 +74,9 @@ alias vps6="ssh deploy@vps6.rootbox.fr"
 alias vps5="ssh deploy@vps5.rootbox.fr"
 alias pi="ssh pi@pi.rootbox.fr"
 
+# Dotfiles aliases
+alias dotfiles-update="cd ~/dotfiles && git pull && sh install.sh; cd -"
+
 # rbenv shell integration
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
