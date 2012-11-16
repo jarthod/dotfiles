@@ -67,7 +67,6 @@ alias ack="ack-grep"
 alias grep='grep --color=auto'
 
 # SSH aliases
-alias preprod="ssh-add; ssh dimelo@preprod.dimelo.typhon.net"
 alias lambda="ssh bigbourin@lambda.rootbox.fr"
 alias vks="ssh root@vks.rootbox.fr"
 alias vps6="ssh deploy@vps6.rootbox.fr"
