@@ -72,6 +72,7 @@ alias vks="ssh root@vks.rootbox.fr"
 alias vps6="ssh deploy@vps6.rootbox.fr"
 alias vps5="ssh deploy@vps5.rootbox.fr"
 alias pi="ssh pi@pi.rootbox.fr"
+alias mars="ssh -p 2200 adrian@mars.resolve.io"
 
 # Dotfiles aliases
 alias dotfiles-update="cd ~/dotfiles && git pull && sh install.sh; cd -"
