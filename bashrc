@@ -89,5 +89,12 @@ else
   export EDITOR='emacs -nw'
 fi
 
+# exec ruby command as root
+function rbenvsudo() {
+  executable=$1
+  shift 1
+  sudo $(rbenv which $executable) $*
+}
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
