@@ -48,7 +48,20 @@ __git_ps1 ()
 }
 
 # colored prompt
-export PS1="\[\e[01;32m\]\u@\h \[\e[01;36m\][\W]\[\e[01;35m\]\$(__git_ps1) \[\e[01;33m\]>\[\e[m\] "
+username=`whoami`
+case $username in
+"root")
+    export PS1="\[\e[01;31m\]" # red
+    ;;
+"deploy")
+    export PS1="\[\e[01;35m\]" # purple
+    ;;
+*)
+    export PS1="\[\e[01;32m\]" # green
+    ;;
+esac
+
+export PS1="$PS1\u@\h \[\e[01;36m\][\W]\[\e[01;35m\]\$(__git_ps1) \[\e[01;33m\]>\[\e[m\] "
 
 # aliases
 alias ls='ls --color=auto'
