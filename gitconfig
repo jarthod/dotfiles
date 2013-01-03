@@ -2,6 +2,9 @@
 	name = Adrien Jarthon
 	email = jobs@adrienjarthon.com
 
+[push]
+  default = upstream
+
 [color]
   branch = auto
   diff = auto
