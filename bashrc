@@ -1,4 +1,8 @@
-# If not running interactively, don't do anything
+# rbenv shell integration
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# If not running interactively, stop here
 [ -z "$PS1" ] && return
 
 # Redirect to home if not allowed in this folder
@@ -91,10 +95,6 @@ alias omicron="ssh deploy@omicron.rootbox.fr"
 
 # Dotfiles aliases
 alias dotfiles-update="cd ~/dotfiles && git pull && sh install.sh; cd -"
-
-# rbenv shell integration
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 # default text editor
 if command -v subl >/dev/null 2>&1
