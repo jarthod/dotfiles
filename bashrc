@@ -80,6 +80,7 @@ alias l='ls -CF'
 alias be="bundle exec"
 alias edit="subl"
 alias rspec="bundle exec rspec --format documentation"
+alias cap="bundle exec cap"
 alias gs="git status"
 alias ga="git add"
 alias gr="git rm"
