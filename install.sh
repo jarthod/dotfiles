@@ -6,7 +6,7 @@
 # folders
 dir=~/dotfiles
 backup=~/dotfiles_old
-files="bashrc bash_profile gitconfig gemrc irbrc irbrc_rails"
+files="bashrc bash_profile inputrc gitconfig gemrc irbrc irbrc_rails"
 
 # create dotfiles_old in homedir
 mkdir -p $backup
