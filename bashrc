@@ -91,13 +91,11 @@ alias grep='grep --color=auto'
 
 # SSH aliases
 alias lambda="ssh bigbourin@lambda.rootbox.fr"
-alias vks="ssh root@vks.rootbox.fr"
-alias vps6="ssh deploy@vps6.rootbox.fr"
-alias vps5="ssh deploy@vps5.rootbox.fr"
+alias epsilon="ssh admin@epsilon.rootbox.fr"
+alias beta="ssh admin@beta.rootbox.fr"
 alias pi="ssh deploy@pi.rootbox.fr"
-alias raspi="ssh pi@desk.rootbox.fr"
-alias mars="ssh -p 2200 adrian@mars.resolve.io"
 alias omicron="ssh deploy@omicron.rootbox.fr"
+alias gamma="ssh deploy@gamma.rootbox.fr"
 
 # Dotfiles aliases
 alias dotfiles-update="cd ~/dotfiles && git pull && sh install.sh; cd -"
