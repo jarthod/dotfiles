@@ -2,14 +2,6 @@
 require 'rubygems'
 require 'irb/completion'
 
-# awesome print
-begin
-  require 'awesome_print'
-  AwesomePrint.irb!
-rescue LoadError => err
-  warn "awesome_print is not loaded"
-end
-
 # configure irb
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
