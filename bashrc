@@ -2,6 +2,9 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# CGMiner
+export GPU_MAX_ALLOC_PERCENT=100
+
 # Rails GC optimization
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_FREE_MIN=500000
@@ -96,6 +99,7 @@ alias beta="ssh admin@beta.rootbox.fr"
 alias pi="ssh deploy@pi.rootbox.fr"
 alias omicron="ssh deploy@omicron.rootbox.fr"
 alias gamma="ssh deploy@gamma.rootbox.fr"
+alias miner="ssh adrien@desk.rootbox.fr -p23"
 
 # Dotfiles aliases
 alias dotfiles-update="cd ~/dotfiles && git pull && sh install.sh; cd -"
