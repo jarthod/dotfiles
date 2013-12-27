@@ -99,7 +99,7 @@ alias beta="ssh admin@beta.rootbox.fr"
 alias pi="ssh deploy@pi.rootbox.fr"
 alias omicron="ssh deploy@omicron.rootbox.fr"
 alias gamma="ssh deploy@gamma.rootbox.fr"
-alias miner="ssh adrien@desk.rootbox.fr -p23"
+alias miner="ssh adrien@desk.rootbox.fr -p25"
 
 # Dotfiles aliases
 alias dotfiles-update="cd ~/dotfiles && git pull && sh install.sh; cd -"
