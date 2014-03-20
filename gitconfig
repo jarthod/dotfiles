@@ -24,4 +24,4 @@
   untracked = cyan
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  branches = for-each-ref --sort=-committerdate --format="%(committerdate:short) - %(authorname)%09%(refname:short)"
+  branches = "for-each-ref --sort=-committerdate refs/remotes --format='%1B[0;31m%(committerdate:short)%1B[1;30m – %1B[0;33m%(authorname)%09%1B[0;36m%(refname:short) %1B[1;30m– %(subject)%1B[m'"
