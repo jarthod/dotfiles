@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+# This script creates symlinks from the home directory to any desired dotfiles in ~/.dotfiles
 # Source: http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles
 
 # folders
-dir=~/dotfiles
-backup=~/dotfiles_old
+dir=~/.dotfiles
+backup=~/.dotfiles_backup
 files="bashrc bash_profile inputrc gitconfig gemrc irbrc irbrc_rails"
 
 # create dotfiles_old in homedir

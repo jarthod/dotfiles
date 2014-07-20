@@ -112,7 +112,7 @@ alias gamma="ssh deploy@gamma.rootbox.fr"
 alias miner="ssh adrien@desk.rootbox.fr -p23"
 
 # Dotfiles aliases
-alias dotfiles-update="cd ~/dotfiles && git pull && sh install.sh; cd -"
+alias dotfiles-update="cd ~/.dotfiles && git pull && sh install.sh; cd -"
 
 # default text editor
 if command -v subl >/dev/null 2>&1
