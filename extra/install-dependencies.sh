@@ -1,0 +1,1 @@
+sudo apt-get install -y ntp git htop iotop iftop build-essential screen curl emacs autoconf zlib1g-dev aptitude nodejs libssl-dev libxml2-dev libxslt-dev libsqlite3-dev libreadline-dev python3.3
