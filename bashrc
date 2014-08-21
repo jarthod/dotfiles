@@ -83,10 +83,13 @@ alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias r='touch tmp/restart.txt'
 alias be="bundle exec"
 alias edit="subl"
-alias rspec="bundle exec rspec --format documentation"
-alias cap="bundle exec cap"
+alias rspec="bin/rspec --format documentation"
+alias cap="bin/cap"
+alias rails="bin/rails"
+alias rake="bin/rake"
 alias gs="git status"
 alias ga="git add -A"
 alias gb="git branch"
