@@ -1,5 +1,5 @@
 # rbenv shell integration
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="./bin:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # CGMiner
@@ -86,10 +86,10 @@ alias l='ls -CF'
 alias r='touch tmp/restart.txt'
 alias be="bundle exec"
 alias edit="subl"
-alias rspec="bin/rspec"
-alias cap="bin/cap"
-alias rails="bin/rails"
-alias rake="bin/rake"
+alias rspec="rspec -fd"
+alias cap="cap"
+alias rails="rails"
+alias rake="rake"
 alias gs="git status"
 alias ga="git add -A"
 alias gb="git branch"
