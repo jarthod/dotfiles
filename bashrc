@@ -16,6 +16,9 @@ export RUBY_GC_OLDMALLOC_LIMIT=64000000
 # If not running interactively, stop here
 [ -z "$PS1" ] && return
 
+# Disable PATH caching (usefull for ./bin)
+set +h
+
 # Redirect to home if not allowed in this folder
 if [ ! -w "$PWD" ]; then cd $HOME; fi
 
@@ -41,10 +44,6 @@ shopt -s globstar
 if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -87,9 +86,6 @@ alias r='touch tmp/restart.txt'
 alias be="bundle exec"
 alias edit="subl"
 alias rspec="rspec -fd"
-alias cap="cap"
-alias rails="rails"
-alias rake="rake"
 alias gs="git status"
 alias ga="git add -A"
 alias gb="git branch"
