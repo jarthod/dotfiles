@@ -1,6 +1,7 @@
 # rbenv shell integration
-export PATH="./bin:$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export PATH="./bin:$PATH"
 
 # CGMiner
 export GPU_MAX_ALLOC_PERCENT=100
