@@ -86,7 +86,6 @@ alias l='ls -CF'
 alias r='touch tmp/restart.txt'
 alias be="bundle exec"
 alias edit="subl"
-alias rspec="rspec -fd"
 alias gs="git status"
 alias ga="git add -A"
 alias gb="git branch"
