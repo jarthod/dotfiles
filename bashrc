@@ -101,14 +101,15 @@ alias gsu="git submodule update --init"
 alias ack="ack-grep"
 alias grep='grep --color=auto'
 
-# SSH aliases
-alias lambda="ssh bigbourin@lambda.rootbox.fr"
-alias epsilon="ssh admin@epsilon.rootbox.fr"
-alias beta="ssh admin@beta.rootbox.fr"
-alias pi="ssh deploy@pi.rootbox.fr"
+# SSH aliases (servers)
+alias alpha="ssh deploy@alpha.rootbox.fr"
 alias omicron="ssh deploy@omicron.rootbox.fr"
 alias gamma="ssh deploy@gamma.rootbox.fr"
-alias miner="ssh adrien@desk.rootbox.fr -p23"
+alias pi="ssh deploy@pi.rootbox.fr"
+
+# SSH aliases (NAS)
+alias beta="ssh admin@beta.rootbox.fr"
+alias epsilon="ssh admin@epsilon.rootbox.fr"
 
 # Dotfiles aliases
 alias dotfiles-update="cd ~/.dotfiles && git pull && sh install.sh; cd -"
