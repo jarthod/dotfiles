@@ -3,17 +3,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="./bin:$PATH"
 
-# CGMiner
-export GPU_MAX_ALLOC_PERCENT=100
-
-# Rails GC optimization
-export RUBY_GC_HEAP_INIT_SLOTS=400000
-export RUBY_GC_HEAP_FREE_SLOTS=400000
-export RUBY_GC_HEAP_GROWTH_FACTOR=1.4
-export RUBY_GC_HEAP_GROWTH_MAX_SLOTS=200000
-export RUBY_GC_MALLOC_LIMIT=64000000
-export RUBY_GC_OLDMALLOC_LIMIT=64000000
-
 # If not running interactively, stop here
 [ -z "$PS1" ] && return
 
@@ -105,7 +94,6 @@ alias grep='grep --color=auto'
 alias alpha="ssh deploy@alpha.rootbox.fr"
 alias omicron="ssh deploy@omicron.rootbox.fr"
 alias gamma="ssh deploy@gamma.rootbox.fr"
-alias pi="ssh deploy@pi.rootbox.fr"
 
 # SSH aliases (NAS)
 alias beta="ssh admin@beta.rootbox.fr"
