@@ -119,3 +119,10 @@ function rbenvsudo() {
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# easily share a file
+function upload {
+  curl -# -F "file=@$1" https://file.io > /tmp/upload
+  local id=`cat /tmp/upload | grep -Eo '"key":"\w{6}"' | grep -Eo "\w{6}"`
+  echo "https://file.io/$id"
+}
