@@ -13,10 +13,9 @@ def set_logger_to(logger)
     ActiveRecord::Base.logger = logger
     ActiveRecord::Base.clear_reloadable_connections!
   end
-  if defined? Mongoid
-    Mongoid.logger = logger
-    Moped.logger = logger
-  end
+  Mongoid.logger = logger if defined? Mongoid
+  Moped.logger = logger if defined? Moped
+  Mongo::Logger.logger if defined? Mongo
 end
 
 def efind(email)
