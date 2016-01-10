@@ -92,8 +92,10 @@ alias grep='grep --color=auto'
 
 # SSH aliases (servers)
 alias alpha="ssh deploy@alpha.rootbox.fr"
-alias omicron="ssh deploy@omicron.rootbox.fr"
-alias gamma="ssh deploy@gamma.rootbox.fr"
+alias bhs="ssh deploy@bhs.updn.io"
+alias sfo="ssh deploy@sfo.updn.io"
+alias gra="ssh deploy@gra.updn.io"
+alias sgp="ssh deploy@sgp.updn.io"
 
 # SSH aliases (NAS)
 alias beta="ssh admin@beta.rootbox.fr"
