@@ -15,7 +15,7 @@ def set_logger_to(logger)
   end
   Mongoid.logger = logger if defined? Mongoid
   Moped.logger = logger if defined? Moped
-  Mongo::Logger.logger if defined? Mongo
+  Mongo::Logger.logger = logger if defined? Mongo
 end
 
 def efind(email)
