@@ -1,0 +1,7 @@
+Host bhs gra fra tok sin syd lan mia sfo sgp
+  HostName %h.updn.io
+  User deploy
+
+Host beta epsilon
+  HostName %h.rootbox.fr
+  User admin

@@ -20,6 +20,8 @@ for file in $files; do
   mv -f ~/.$file $backup
   ln -s $dir/$file ~/.$file
 done
+mv -f ~/.ssh/config ~/.dotfiles_backup
+ln -s $dir/ssh_config ~/.ssh/config
 
 # copy authorized_keys
 if [ ! -e ~/.ssh/authorized_keys ]
