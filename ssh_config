@@ -1,4 +1,4 @@
-Host bhs gra fra tok sin syd lan mia sfo sgp db1 db2 db3
+Host bhs gra fra tok sin syd lan mia sfo sgp db1 db2 db3 web1 web2
   HostName %h.updn.io
   User deploy
 
