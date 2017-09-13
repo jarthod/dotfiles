@@ -1,6 +1,13 @@
 Host bhs gra fra tok sin syd lan mia sfo sgp db1 db2 db3 web1 web2
   HostName %h.updn.io
   User deploy
+  # don't try to authenticate with Kerberos
+  GSSAPIAuthentication no
+  GSSAPIKeyExchange no
+  # subsequent ssh connections respond faster because its reusing an existing connection
+  ControlMaster auto
+  ControlPath ~/.ssh/master-%r@%h:%p
+  ControlPersist 5m
 
 Host beta epsilon
   HostName %h.rootbox.fr
