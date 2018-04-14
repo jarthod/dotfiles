@@ -1,6 +1,12 @@
 Host bhs gra fra tok sin syd lan mia sfo sgp db1 db2 db3 web1 web2 tor
   HostName %h.updn.io
   User deploy
+
+Host beta epsilon
+  HostName %h.rootbox.fr
+  User admin
+
+Host *
   # don't try to authenticate with Kerberos
   GSSAPIAuthentication no
   GSSAPIKeyExchange no
@@ -8,7 +14,3 @@ Host bhs gra fra tok sin syd lan mia sfo sgp db1 db2 db3 web1 web2 tor
   ControlMaster auto
   ControlPath ~/.ssh/master-%r@%h:%p
   ControlPersist 5m
-
-Host beta epsilon
-  HostName %h.rootbox.fr
-  User admin
