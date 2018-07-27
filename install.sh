@@ -26,9 +26,10 @@ ln -s $dir/ssh_config ~/.ssh/config
 # copy authorized_keys
 if [ ! -e ~/.ssh/authorized_keys ]
 then
-  echo "Copying authorized_keys"
+  echo "Linking authorized_keys"
   ln -s $dir/authorized_keys ~/.ssh/authorized_keys
 fi
+chmod 600 $dir/authorized_keys
 
 # install rbenv
 if [ ! -e ~/.rbenv ]
