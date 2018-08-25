@@ -1,4 +1,4 @@
-Host bhs gra fra tok sin syd lan mia db1 db2 db3 web1 web2 web3 tor elk
+Host bhs gra fra tok sin syd lan mia db1 db2 db3 web1 web2 web3 tls1 tls2 elk
   HostName %h.updn.io
   User deploy
 
