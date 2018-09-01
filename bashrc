@@ -1,7 +1,7 @@
 # rbenv shell integration
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-export PATH="./bin:$PATH"
+export PATH="./bin:~/.dotfiles/bin:$PATH"
 
 # If not running interactively, stop here
 [ -z "$PS1" ] && return
@@ -89,6 +89,7 @@ alias gb="git blame"
 alias gsu="git submodule update --init"
 alias ack="ack-grep"
 alias grep='grep --color=auto'
+alias cat='bat'
 
 # Dotfiles aliases
 alias dotfiles-update="cd ~/.dotfiles && git pull && sh install.sh; cd -"
