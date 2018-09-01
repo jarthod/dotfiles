@@ -4,6 +4,7 @@
 
 [core]
   mergeoptions = --no-edit
+  pager = ~/.dotfiles/bin/diff-so-fancy | less --tabs=4 -RFX
 
 [push]
   default = tracking
@@ -24,11 +25,18 @@
   local = yellow
   remote = green
 [color "diff"]
-  meta = yellow bold
+  meta = yellow
   frag = magenta bold
   old = red bold
   new = green bold
+  commit = yellow bold
+  whitespace = red reverse
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
