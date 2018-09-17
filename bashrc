@@ -99,7 +99,7 @@ if command -v subl >/dev/null 2>&1
 then
   export EDITOR='subl -w'
 else
-  export EDITOR='emacs -nw'
+  export EDITOR='vim'
 fi
 
 # exec ruby command as root
