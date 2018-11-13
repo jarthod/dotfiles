@@ -20,6 +20,7 @@ for file in $files; do
   mv -f ~/.$file $backup
   ln -s $dir/$file ~/.$file
 done
+mkdir -p ~/.ssh
 mv -f ~/.ssh/config ~/.dotfiles_backup
 ln -s $dir/ssh_config ~/.ssh/config
 

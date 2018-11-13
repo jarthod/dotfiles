@@ -89,7 +89,6 @@ alias gb="git blame"
 alias gsu="git submodule update --init"
 alias ack="ack-grep"
 alias grep='grep --color=auto'
-alias cat='bat'
 alias tcurl='curl -w "\n\nRedir: %{time_redirect}\n  DNS: %{time_namelookup}\n  TCP: %{time_connect}\n  TLS: %{time_appconnect}\nStart: %{time_starttransfer}\n ----------\nTotal: %{time_total}\n"'
 
 # Dotfiles aliases
