@@ -90,8 +90,8 @@ alias gsu="git submodule update --init"
 alias ack="ack-grep"
 alias grep='grep --color=auto'
 alias tcurl='curl -w "\n\nRedir: %{time_redirect}\n  DNS: %{time_namelookup}\n  TCP: %{time_connect}\n  TLS: %{time_appconnect}\nStart: %{time_starttransfer}\n ----------\nTotal: %{time_total}\n"'
-alias updn='ssh -t web1 "cd updown/current && bin/rails c -e production"'
-alias updn-staging='ssh -t web1 "cd updown-staging/current && bin/rails c -e staging"'
+alias updn='ssh -t db3 "cd updown/current && bin/rails c -e production"'
+alias updn-staging='ssh -t db3 "cd updown-staging/current && bin/rails c -e staging"'
 
 # Dotfiles aliases
 alias dotfiles-update="cd ~/.dotfiles && git pull && sh install.sh; cd -"
