@@ -74,6 +74,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias r='touch tmp/restart.txt'
 alias be="bundle exec"
+alias dokku="DOKKU_HOST=dokku.rootbox.fr dokku_client.sh"
 alias edit="subl"
 alias gs="git status"
 alias ga="git add -A"
