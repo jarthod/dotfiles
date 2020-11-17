@@ -6,6 +6,10 @@ Host beta epsilon
   HostName %h.rootbox.fr
   User admin
 
+Host alpha
+  HostName %h.rootbox.fr
+  User deploy
+
 Host *
   # don't try to authenticate with Kerberos
   GSSAPIAuthentication no
