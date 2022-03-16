@@ -69,18 +69,12 @@ export PS1="$PS1\u@\h \[\e[01;36m\][\W]\[\e[01;35m\]\$(__git_ps1) \[\e[01;33m\]>
 
 # aliases
 alias ls='ls --color=auto'
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias r='touch tmp/restart.txt'
 alias be="bundle exec"
 alias dokku="DOKKU_HOST=dokku.rootbox.fr dokku_client.sh"
 alias edit="subl"
 alias gs="git status"
 alias ga="git add -A"
-alias gb="git branch"
 alias gd="git diff"
-alias gr="git rm"
 alias gcm="git commit -m"
 alias gp="git pull"
 alias gpr="git pull --rebase"
@@ -88,7 +82,6 @@ alias gc="git checkout"
 alias gl="git log"
 alias gb="git blame"
 alias gsu="git submodule update --init"
-alias ack="ack-grep"
 alias grep='grep --color=auto'
 alias tcurl='curl -w "\n\nRedir: %{time_redirect}\n  DNS: %{time_namelookup}\n  TCP: %{time_connect}\n  TLS: %{time_appconnect}\nStart: %{time_starttransfer}\n ----------\nTotal: %{time_total}\n"'
 alias updn='ssh -t db3 "cd updown/current && bin/rails c -e production"'

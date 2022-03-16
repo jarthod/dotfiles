@@ -6,7 +6,7 @@
 # folders
 dir=~/.dotfiles
 backup=~/.dotfiles_backup
-files="bashrc bash_profile inputrc gitconfig gemrc irbrc irbrc_rails pryrc"
+files="bashrc bash_profile inputrc gitconfig gemrc"
 
 # create dotfiles_old in homedir
 mkdir -p $backup
@@ -36,6 +36,6 @@ chmod 600 $dir/authorized_keys
 if [ ! -e ~/.rbenv ]
 then
   echo "Installing rbenv"
-  git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
-  git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+  git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+  git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 fi
