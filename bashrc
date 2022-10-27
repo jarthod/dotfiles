@@ -2,6 +2,8 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="./bin:~/.dotfiles/bin:$PATH"
+export FLYCTL_INSTALL="$HOME/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 # If not running interactively, stop here
 [ -z "$PS1" ] && return
