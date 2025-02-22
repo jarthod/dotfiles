@@ -1,9 +1,7 @@
 # rbenv shell integration
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-export PATH="./bin:~/.dotfiles/bin:$PATH"
-export FLYCTL_INSTALL="$HOME/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export PATH="./bin:$PATH:$HOME/.local/bin:/usr/local/heroku/bin"
 
 # If not running interactively, stop here
 [ -z "$PS1" ] && return
@@ -106,9 +104,6 @@ function rbenvsudo() {
   shift 1
   sudo $(rbenv which $executable) $*
 }
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 # easily share a file
 function upload {
