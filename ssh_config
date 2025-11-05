@@ -1,4 +1,4 @@
-Host bhs rbx fra tok sin syd lan mia hel db1 db2 db3 db4 web1 web2 web3 tls1 tls2 elk elk2
+Host bhs rbx fra tok sin syd lan mia hel db1 db2 db3 db4 web1 web2 web3 tls1 tls2 elk elk2 cap
   HostName %h.updn.io
   User deploy
 
@@ -18,3 +18,5 @@ Host *
   ControlMaster auto
   ControlPath ~/.ssh/master-%r@%h:%p
   ControlPersist 5m
+  # Do not forward local locale to avoid perl warnings
+  SendEnv -LC_*

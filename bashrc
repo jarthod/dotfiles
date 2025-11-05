@@ -1,7 +1,7 @@
 # rbenv shell integration
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-export PATH="./bin:$PATH:$HOME/.local/bin:/usr/local/heroku/bin"
+export PATH="./bin:$PATH:$HOME/.local/bin:$HOME/.dotfiles/bin:/usr/local/heroku/bin"
 
 # If not running interactively, stop here
 [ -z "$PS1" ] && return
